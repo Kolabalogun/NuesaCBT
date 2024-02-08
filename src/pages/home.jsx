@@ -5,9 +5,14 @@ import Hero from "../components/Home/Hero";
 import Loader from "../components/Loader";
 import Navbar from "../components/Navbar";
 import { useGlobalContext } from "../functions/context";
+import { useEffect } from "react";
 
 const Home = () => {
   const { loading } = useGlobalContext();
+
+  useEffect(() => {
+    scroll(0, 0);
+  }, []);
 
   if (loading) {
     return <Loader />;

@@ -14,8 +14,8 @@ const Navbar = () => {
 
   return (
     <div className="relative flex items-center justify-center">
-      <div className="flex py-10 justify-between items-center w-full ">
-        <div className="flex items-center gap-4">
+      <div className="flex py-5 lg:py-10 justify-between items-center w-full ">
+        <div className="flex items-center gap-2">
           <img src={logo} alt="" className="h-9 w-9 rounded-full" />
           <p className="uppercase font-bold text-lg text-black ">
             NUESA MOCK TEST

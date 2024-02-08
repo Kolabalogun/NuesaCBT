@@ -12,12 +12,16 @@ const Quiz = () => {
   const { selectedCourse, setSelectedCourseList, selectedCourseList, user } =
     useGlobalContext();
 
+    useEffect(() => {
+      scroll(0, 0);
+    }, []);
+
   const navigate = useNavigate();
 
   const [questions, setQuestions] = useState(
     selectedCourse === "PHY 115" ? Phy115QuestionsArray : questionsArray
   );
-  const [timeLeft, setTimeLeft] = useState(10);
+  const [timeLeft, setTimeLeft] = useState(600);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [loading, setLoading] = useState(false);
   const [userAnswers, setUserAnswers] = useState([]);

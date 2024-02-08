@@ -9,7 +9,7 @@ const Help = () => {
         <p className="font-medium text-center mt-5">
           Do you need help navigating through school or about school or you have
           any academic issues bordering you. Please feel free to reach out the
-          the Facaulty President (08102869765). We are here to help you navigate
+          the NUESA President (08102869765). We are here to help you navigate
           toward academic excellence.😊
         </p>
       </div>

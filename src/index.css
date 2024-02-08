@@ -24,6 +24,7 @@
 body {
   background-color: white;
   scroll-behavior: smooth;
+  font-family: "Syne", sans-serif !important;
 }
 
 h1 {

@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import { useEffect } from "react";
 import Contact from "../components/Home/Contact";
 import Help from "../components/Home/Help";
 import Navbar from "../components/Navbar";
@@ -8,6 +9,12 @@ import { useNavigate } from "react-router-dom";
 const CourseSelection = () => {
   const { setSelectedCourse, selectedCourseList, handleLogOut } =
     useGlobalContext();
+
+  useEffect(() => {
+    scroll(0, 0);
+    window.scrollTo(0, 0);
+  }, []);
+
   const navigate = useNavigate();
 
   const courses = ["Current Affairs", "PHY 115"];
