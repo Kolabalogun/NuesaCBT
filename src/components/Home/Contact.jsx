@@ -19,7 +19,7 @@ const Contact = () => {
       <div className="flex flex-col items-center justify-center bg-white py-[80px]">
         <div className="flex">
           <a
-            href={pageContent?.footerTwitterLink}
+            href="https://twitter.com/unilorin_nuesa/status/1755579955478434303?s=19"
             target={"_blank"}
             rel="noreferrer"
             className="rounded-[50px] p-2 bg-black mx-3 hover:bg-twitter cursor-pointer hover:bg-[#987efc]"
@@ -28,7 +28,7 @@ const Contact = () => {
           </a>
 
           <a
-            href={pageContent?.footerInstagramLink}
+            href="https://www.instagram.com/p/C3Fn9_ZMPoA/?igsh=NGtsbTdnMnh4OTlv"
             target={"_blank"}
             rel="noreferrer"
             className="rounded-[50px] p-2 bg-black hover:bg-ig  mx-3 cursor-pointer hover:bg-[#987efc]"
@@ -37,7 +37,7 @@ const Contact = () => {
           </a>
 
           <a
-            href={pageContent?.footerLinkedInLink}
+            href="https://www.linkedin.com/posts/nuesa-unilorin_cheers-to-our-fellow-nigerians-super-activity-7161346527951564800-8CCP?utm_source=share&utm_medium=member_android"
             target={"_blank"}
             rel="noreferrer"
             className="rounded-[50px] p-2 hover:bg-linked  bg-black mx-3 cursor-pointer hover:bg-[#987efc]"
