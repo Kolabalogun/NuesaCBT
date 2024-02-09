@@ -1003,15 +1003,7 @@ export const stat131QuestionsArray = [
     ],
     correctAnswer: "C. Simple random sampling",
   },
-  {
-    questionText:
-      "The scores of 30 students are given below. Find the variance:",
-    tableData: {
-      headers: ["Scores", "15", "20", "25", "28", "26", "18"],
-      frequencies: ["Freque.", "5", "8", "4", "3", "6", "4"],
-    },
-    correctAnswer: "Answer not provided in the original set of questions.",
-  },
+
   {
     questionText: "With the help of a histogram, we can draw",
     options: [

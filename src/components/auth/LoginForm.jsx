@@ -110,14 +110,14 @@ const LoginForm = () => {
             </button>
           </div>
 
-          <div className="my-5">
+          {/* <div className="my-5">
             <p className="text-center text-[#5d5d5d] text-sm font-medium">
               Don't have an account?{" "}
               <Link to={"/register"}>
                 <span className="text-[#000]">Sign Up</span>
               </Link>
             </p>
-          </div>
+          </div> */}
         </form>
       </div>
     </div>
