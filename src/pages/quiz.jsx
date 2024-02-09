@@ -4,8 +4,14 @@ import Navbar from "../components/Navbar";
 import { useGlobalContext } from "../functions/context";
 import {
   Phy115QuestionsArray,
+  che115QuestionsArray,
+  chemistry101QuestionsArray,
+  math111QuestionsArray,
+  math113QuestionsArray,
   phy125QuestionsArray,
+  physics191QuestionsArray,
   questionsArray,
+  stat131QuestionsArray,
 } from "../components/questions";
 import { useNavigate } from "react-router-dom";
 import { doc, updateDoc } from "firebase/firestore";
@@ -27,6 +33,18 @@ const Quiz = () => {
       ? Phy115QuestionsArray
       : selectedCourse === "PHY 125"
       ? phy125QuestionsArray
+      : selectedCourse === "MAT 111"
+      ? math111QuestionsArray
+      : selectedCourse === "MAT 113"
+      ? math113QuestionsArray
+      : selectedCourse === "PHY 191"
+      ? physics191QuestionsArray
+      : selectedCourse === "CHM 101"
+      ? chemistry101QuestionsArray
+      : selectedCourse === "CHM 115"
+      ? che115QuestionsArray
+      : selectedCourse === "STA 131"
+      ? stat131QuestionsArray
       : questionsArray
   );
   const [timeLeft, setTimeLeft] = useState(600);
