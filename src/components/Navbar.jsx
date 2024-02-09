@@ -7,10 +7,12 @@ import close from "../assets/close.svg";
 
 import useMediaQuery from "../Hook/useMediaQuery";
 import { NavLinks } from "./links";
+import { useGlobalContext } from "../functions/context";
 
 const Navbar = () => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
+  const { handleLogOut, user } = useGlobalContext();
 
   return (
     <div className="relative flex items-center justify-center">
@@ -35,6 +37,16 @@ const Navbar = () => {
                 {title}
               </Link>
             ))}
+            {user && (
+              <button
+                onClick={handleLogOut}
+                className={
+                  "text-base font-medium linked cursor-pointer py-2  mx-10 text-black uppercase "
+                }
+              >
+                Log Out
+              </button>
+            )}
           </div>
         ) : (
           <button
@@ -61,12 +73,7 @@ const Navbar = () => {
             {NavLinks.map(({ title, link }, idx) => (
               <Link
                 key={idx}
-                activeClass="active"
                 to={link}
-                spy={true}
-                smooth={true}
-                offset={-80}
-                duration={800}
                 className={
                   "text-base font-medium linked cursor-pointer py-2  mx-10 text-white  "
                 }
@@ -74,6 +81,16 @@ const Navbar = () => {
                 {title}
               </Link>
             ))}
+            {user && (
+              <button
+                onClick={handleLogOut}
+                className={
+                  "text-base text-start font-medium linked cursor-pointer py-2  mx-10 text-white  "
+                }
+              >
+                Log Out
+              </button>
+            )}
           </div>
         </div>
       )}

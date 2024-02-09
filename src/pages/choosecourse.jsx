@@ -17,7 +17,7 @@ const CourseSelection = () => {
 
   const navigate = useNavigate();
 
-  const courses = ["Current Affairs", "PHY 115"];
+  const courses = ["Current Affairs", "PHY 115", "PHY 125"];
 
   const allCoursesSelected = courses.every((course) =>
     selectedCourseList.includes(course)

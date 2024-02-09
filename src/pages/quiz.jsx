@@ -2,7 +2,11 @@ import { useEffect, useState } from "react";
 import Contact from "../components/Home/Contact";
 import Navbar from "../components/Navbar";
 import { useGlobalContext } from "../functions/context";
-import { Phy115QuestionsArray, questionsArray } from "../components/questions";
+import {
+  Phy115QuestionsArray,
+  phy125QuestionsArray,
+  questionsArray,
+} from "../components/questions";
 import { useNavigate } from "react-router-dom";
 import { doc, updateDoc } from "firebase/firestore";
 import { db } from "../utils/Firebase";
@@ -12,14 +16,18 @@ const Quiz = () => {
   const { selectedCourse, setSelectedCourseList, selectedCourseList, user } =
     useGlobalContext();
 
-    useEffect(() => {
-      scroll(0, 0);
-    }, []);
+  useEffect(() => {
+    scroll(0, 0);
+  }, []);
 
   const navigate = useNavigate();
 
   const [questions, setQuestions] = useState(
-    selectedCourse === "PHY 115" ? Phy115QuestionsArray : questionsArray
+    selectedCourse === "PHY 115"
+      ? Phy115QuestionsArray
+      : selectedCourse === "PHY 125"
+      ? phy125QuestionsArray
+      : questionsArray
   );
   const [timeLeft, setTimeLeft] = useState(600);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -74,7 +82,7 @@ const Quiz = () => {
       await updateDoc(userRef, {
         [selectedCourse]: parseInt(calculateScore()),
       });
-      showToast(toast, "Login.", "success", "Score Updated Successfully.");
+      showToast(toast, "Test.", "success", "Score Updated Successfully.");
       navigate("/choose-course");
       setSelectedCourseList([...selectedCourseList, selectedCourse]);
       localStorage.setItem(

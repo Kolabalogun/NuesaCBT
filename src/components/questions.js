@@ -233,3 +233,130 @@ export const Phy115QuestionsArray = [
     correctAnswer: "C. Solid angle",
   },
 ];
+export const phy125QuestionsArray = [
+  {
+    questionText: "In liquids and gases, heat transmission is primarily caused by:",
+    options: ["Convection", "Radiation", "Conduction", "Conduction as well as convection"],
+    correctAnswer: "Convection",
+  },
+  {
+    questionText: "What is thermodynamics?",
+    options: [
+      "Study of the relationship between heat and other forms of energy",
+      "Study of the conversion of chemical energy to other forms of energy",
+      "Study of the relationship between mechanical energy to other forms of energy",
+      "Study of the conversion of mechanical energy to other forms of energy",
+    ],
+    correctAnswer: "Study of the relationship between heat and other forms of energy",
+  },
+  {
+    questionText: "Heat does not spontaneously flow from a colder body to a hotter one. Which of the following thermodynamics law states this?",
+    options: [
+      "Zeroth law of thermodynamics",
+      "First law of thermodynamics",
+      "Second law of thermodynamics",
+      "Third law of thermodynamics",
+    ],
+    correctAnswer: "Second law of thermodynamics",
+  },
+  {
+    questionText: "Which of the following is an application of thermodynamics?",
+    options: ["Refrigerators", "Gas compressors", "Power plants", "All of the mentioned"],
+    correctAnswer: "All of the mentioned",
+  },
+  {
+    questionText: "A closed pipe of length 50cm has water at 40cm. After being struck with a frequency of 256Hz, the water level moves up to 45 cm. What is the wavelength?",
+    options: ["4120", "5120", "4320", "4425"],
+    correctAnswer: "5120",
+  },
+  {
+    questionText: "The average translational kinetic energy of a molecule depends on:",
+    options: ["Pressure and temperature", "Temperature alone", "Pressure alone", "Momentum"],
+    correctAnswer: "Temperature alone",
+  },
+  {
+    questionText: "Which of these explains Myopia?",
+    options: [
+      "Seeing near objects clearly and farther objects appear blurry",
+      "Seeing farther objects near objects clearly appear blurry",
+      "Seeing both near and farther objects clearly",
+      "Near and Farther objects appear blurry",
+    ],
+    correctAnswer: "Seeing near objects clearly and farther objects appear blurry",
+  },
+  {
+    questionText: "Hypermyopia is explained with:",
+    options: [
+      "Difficulty in seeing both near and far objects",
+      "Difficulty in seeing far objects and near objects seen clearly",
+      "Difficulty in seeing near objects and far objects are seen easily",
+      "Not seeing at all",
+    ],
+    correctAnswer: "Difficulty in seeing near objects and far objects are seen easily",
+  },
+  {
+    questionText: "Plane mirrors form all these except:",
+    options: ["Erect images", "Virtual images", "Laterally inverted", "Same distance as the object"],
+    correctAnswer: "Laterally inverted",
+  },
+  {
+    questionText: "Which of the following properties is the same for all diverging lenses?",
+    options: ["Real, inverted and the same size.", "Virtual, erect and magnified.", "Virtual, erect and diminished.", "Real, inverted and diminished."],
+    correctAnswer: "Real, inverted and diminished.",
+  },
+  {
+    questionText: "Convert 212°F to °C",
+    options: ["100°C", "120°C", "150°C", "180°C"],
+    correctAnswer: "100°C",
+  },
+  {
+    questionText: "Constant-volume thermometer operates on which of the following?",
+    options: ["Pressure", "Volume", "Pressure and volume", "None of the above"],
+    correctAnswer: "Pressure",
+  },
+  {
+    questionText: "Which type of wave is a light wave?",
+    options: ["Transverse wave", "Longitudinal wave", "Both", "More than one of the above"],
+    correctAnswer: "Transverse wave",
+  },
+  {
+    questionText: "Which of the following statements is correct about sound waves and light waves?",
+    options: ["Sound waves are longitudinal and light waves are transverse.", "Both are longitudinal waves", "Sound waves are transverse and light waves are longitudinal.", "Both are transverse waves"],
+    correctAnswer: "Sound waves are longitudinal and light waves are transverse.",
+  },
+  {
+    questionText: "What is not correct about ultrasonic waves?",
+    options: ["Frequency is very high about 20,000 Hz", "Human ear can hear them", "Wavelength of these waves is very low", "None of the above"],
+    correctAnswer: "Human ear can hear them",
+  },
+  {
+    questionText: "A source of sound frequency 600Hz is placed inside water. The speed of sound in water is 1500 m/s and in air it is 300 m/s. The frequency of sound recorded by an observer standing in the air is?",
+    options: ["200 Hz", "3000 Hz", "120 Hz", "600 Hz"],
+    correctAnswer: "600 Hz",
+  },
+  {
+    questionText: "Which of the following denotes the first law of thermodynamics?",
+    options: [
+      "Energy can neither be created nor destroyed but can be transformed from one form to another.",
+      "If two thermodynamic systems are each in thermal equilibrium with a third one, then they are in thermal equilibrium with each other.",
+      "All irreversible processes increase the entropy of the universe.",
+      "None of the above",
+    ],
+    correctAnswer: "Energy can neither be created nor destroyed but can be transformed from one form to another.",
+  },
+  {
+    questionText: "Each face of a double convex lens has a radius of 20.0 cm. The index of refraction of the glass is 1.50. What is the focal length when it is immersed in carbon disulfide (n=1.63)?",
+    options: ["+125 cm", "-125 cm", "+10 cm", "10 cm"],
+    correctAnswer: "+125 cm",
+  },
+  {
+    questionText: "A 100L gas at a pressure of 5 mmHg. A change in temperature from 20°C to 25°C causes the volume to change to 80L. Calculate the new pressure.",
+    options: ["19 mmHg", "26 mmHg", "17 mmHg", "15 mmHg"],
+    correctAnswer: "19 mmHg",
+  },
+  {
+    questionText: "Two convex lenses of focal lengths 10 cm and 20 cm respectively are placed 20 cm from each other. An object is placed 15 cm to the left of the first. Calculate magnification.",
+    options: ["1.67", "4", "4.5", "4.7"],
+    correctAnswer: "4",
+  },
+];
