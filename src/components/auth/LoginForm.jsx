@@ -20,7 +20,7 @@ const LoginForm = () => {
       .email("Invalid email address")
       .required("Please enter your email"),
 
-    password: Yup.string().required("Password is required"),
+    password: Yup.string().required("Jamb Reg is required"),
   });
 
   // Use useFormik hook to manage form state, validation, and submission
