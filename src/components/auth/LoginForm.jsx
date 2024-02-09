@@ -39,7 +39,7 @@ const LoginForm = () => {
       const { email, password } = values;
 
       try {
-        await signInWithEmailAndPassword(auth, email, password);
+        await signInWithEmailAndPassword(auth, email, password.toUpperCase());
 
         setSubmitting(false);
         showToast(toast, "Login.", "success", "Login Successfully.");
@@ -82,12 +82,12 @@ const LoginForm = () => {
 
           <div className="flex flex-col ">
             <label className="text-base font-medium  mb-1" htmlFor="password">
-              Password
+              Jamb Reg
             </label>
             <div className="flex items-center   bg-inherit border-[#acacac] rounded-lg border-[1px] relative ">
               <input
                 id="password"
-                type={"password"}
+                type={"text"}
                 className="flex-1 bg-inherit rounded-lg  outline-none p-3 "
                 required
                 {...getFieldProps("password")}
