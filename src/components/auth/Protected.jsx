@@ -23,7 +23,7 @@ const Protected = ({ children }) => {
   return isAuthenticated ? (
     children
   ) : (
-    <Navigate to={"/login"} state={{ from: location }} replace />
+    <Navigate to={"/register"} state={{ from: location }} replace />
   );
 };
 

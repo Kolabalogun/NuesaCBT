@@ -15,7 +15,7 @@ const Hero = () => {
         Elevate Your Learning with Interactive CBT Quizzes!
       </h1>
 
-      <Link to={"/login"}>
+      <Link to={"/register"}>
         <button className="bg-black  lg:text-xl text-white py-4 px-8 font-medium rounded-md mt-9">
           Get Started
         </button>

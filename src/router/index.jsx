@@ -12,6 +12,7 @@ import Quiz from "../pages/quiz";
 import UnAuthenticated from "../components/auth/UnAuthenticated";
 import AddVoters from "../pages/addVoters";
 import Contactt from "../pages/contact";
+import Result from "../pages/result";
 
 const router = createBrowserRouter([
   {
@@ -30,12 +31,13 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
+    path: "/see-results",
+    element: <Result />,
+    errorElement: <ErrorPage />,
+  },
+  {
     path: "/register",
-    element: (
-      <UnAuthenticated>
-        <Register />
-      </UnAuthenticated>
-    ),
+    element: <Register />,
     errorElement: <ErrorPage />,
   },
   {

@@ -28,12 +28,6 @@ const RegForm = () => {
     email: Yup.string()
       .email("Invalid email address")
       .required("Please enter your email"),
-
-    password: Yup.string()
-      .required("Password is required")
-      .min(8, "Password must be at least 8 characters")
-
-      .matches(/^\S*$/, "Password cannot contain spaces"),
   });
 
   // Use useFormik hook to manage form state, validation, and submission
@@ -44,7 +38,6 @@ const RegForm = () => {
       jambReg: "",
       email: "",
       department: "",
-      password: "",
     },
     // Form validation schema using Yup
     validationSchema: RegisterSchema,
@@ -52,14 +45,14 @@ const RegForm = () => {
     onSubmit: async (values, { setSubmitting }) => {
       setSubmitting(true);
 
-      const { fullName, jambReg, email, department, password } = values;
+      const { fullName, jambReg, email, department } = values;
 
       try {
         // Create user with email and password
         const userCredential = await createUserWithEmailAndPassword(
           auth,
           email,
-          password
+          jambReg
         );
         const res = userCredential.user;
 
@@ -129,44 +122,24 @@ const RegForm = () => {
             </div>
           ))}
 
-          <div className="flex flex-col ">
-            <label className="text-base font-medium  mb-1" htmlFor="password">
-              Password
-            </label>
-            <div className="flex items-center   bg-inherit border-[#acacac] rounded-lg border-[1px] relative ">
-              <input
-                id="password"
-                type={"password"}
-                className="flex-1 bg-inherit rounded-lg  outline-none p-3 "
-                required
-                {...getFieldProps("password")}
-              />
-            </div>
-            {touched.password && errors.password ? (
-              <div className="text-red-500 py-0.5 text-xs ">
-                {errors.password}
-              </div>
-            ) : null}
-          </div>
-
           <div className="flex justify-center">
             <button
               type="submit"
               size="lg"
               className="bg-[#000] py-4 px-8 mt-5 rounded-md font-semibold  w-full  text-white"
             >
-              {isSubmitting ? "Loading..." : "Create Account"}
+              {isSubmitting ? "Loading..." : "Continue"}
             </button>
           </div>
 
-          <div className="my-5">
+          {/* <div className="my-5">
             <p className="text-center text-[#5d5d5d] text-sm font-medium">
               Already have account?{" "}
               <Link to={"/login"}>
                 <span className="text-[#000]">Sign In</span>
               </Link>
             </p>
-          </div>
+          </div> */}
         </form>
       </div>
     </div>
